@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <form action="https://example.com/submit" method="POST" target="_blank">
+    <!-- Search Field -->
+    <label for="search">Search </label>
+    <br>
+    <input type="search" id="search" name="search" placeholder="Enter A Search Word" autofocus><br><br>
+
+    <!-- File Field -->
+    <label for="file">File:</label>
+    <br>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- URL Field -->
+    <label for="url">URL:</label>
+    <br>
+    <input type="url" id="url" name="url" oninvalid="this.removeAttribute('required');"><br><br>
+
+    <!-- Buttons -->
+    <button type="reset">Empty</button>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+  <hr>
+  <br>
+  
+  <form action="https://example.com/submit" method="POST" target="_blank">
+   
+    <!-- Date Field -->
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" value="1982-10-25"><br><br>
+
+    <!-- Month Field -->
+    <label for="month">Month</label>
+    <input type="month" id="month" name="month" value="1982-10"><br><br>
+ 
+    <!-- Buttons -->
+    <button type="Empty">Empty</button>
+    <button type="save">Submit</button>
+  </form>
+<br>
+<hr>
+<br>
+
+  <pre>
+Hello Line One
+Hello Line Two
+Hello Line Three
+      Hello Line Four
+  </pre>
+<br>
+<hr>
+<br>
+<iframe 
+    src="https://elzero.org" 
+    width="100%" 
+    height="400" 
+    style="border: none;">
+  </iframe>
+  <hr>
+
+
+</body>
+</html>
