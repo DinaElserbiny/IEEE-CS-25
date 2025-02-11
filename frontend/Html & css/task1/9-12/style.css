@@ -1,0 +1,60 @@
+
+.assign-1 div{
+     
+     outline:5px solid black;
+     background-color: #eee;
+    margin: 10px ;
+    display:inline;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.shape1{    
+    border:5px red solid;
+}
+
+ .shape2{
+    border-width: 5px;  
+    border-color: red green;
+    border-style: solid; 
+ }
+
+
+.shape3{
+    
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style:dashed;
+      
+ }
+
+
+.element div{
+     width:400px;
+     outline: #eee solid 8px;
+     border-width:5px ;
+     background-color:#eee;
+     border-style: solid; 
+     margin-bottom: 30px;
+     padding: 5px;
+
+ }
+
+.element-1{
+  border-color:transparent transparent transparent rgb(218, 31, 31) ;
+
+}
+
+.element-2{
+ 
+  border-color:transparent transparent transparent rgb(218, 31, 31) ;
+  visibility: hidden;
+
+ }
+
+.element-3{
+ 
+    border-color:transparent transparent transparent rgb(4, 146, 139) ;
+
+ }
