@@ -1,0 +1,178 @@
+.green,
+.blue,
+.red,
+.black{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+
+.black{
+    background-color: #000000cc;
+    top:30px;
+    left: 20px;
+    z-index: -1;
+
+}
+
+.blue{
+    background-color: #1a8fef;
+   top:20px;
+  left:20px;
+    z-index: 1;
+}
+
+.green{
+    background-color:#009688;
+    z-index: 2;
+    top:30px;
+    left:30px;
+}
+
+.red{
+    background-color:#f44336;
+    z-index: 3;
+    top:40px;
+    left: 40px;
+}
+
+.task2{
+    background-color: #eee;
+    position: relative;
+    top:150px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-style:solid ;
+    border-color: #f44336 #1a8fef ;
+    line-height: 160%;
+    font-family: sans-serif;
+    text-align: center;
+}
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+    background-color: #1a8fef;
+    position: absolute;
+    padding:2px;
+    width: 28px;
+    height: 24px;
+    color: white;
+    border-right-style:solid ;
+}
+
+.top-left{
+    top: -12px;
+    left: -15px;
+    border-right:solid #f44336;
+    
+}
+
+.top-right{
+    top:-12px;
+    right: -14px;
+    border-left:solid #f44336;
+}
+
+.bottom-left{
+    bottom: -12px;
+    left: -14px;
+
+    border-right:solid red ;
+
+}
+.bottom-right{
+    bottom: -12px;
+    right: -14px;
+    border-left:solid #f44336;
+}
+
+.parent
+{
+    position: relative;
+    top: 200px;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+  
+    
+    font-family: sans-serif;   
+    list-style-type: none; 
+    border: 1px solid #eee;
+}
+
+ 
+.html li,
+.css li,
+.java li{
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.html li,
+.css li {
+    list-style-position: outside ;
+}
+
+.java li{
+    list-style: inside circle;
+}
+ 
+
+.css1{
+    list-style-type: "x.";
+}
+.css2{
+    list-style-type:"x|." ;
+}
+.css3{
+    list-style-type: "x||.";
+}
+
+.list{
+    background-color:#eee;
+    padding: 10px;
+    margin-bottom:15px ;
+}
+
+/*ol{
+    margin-top:5px;
+    margin-left:40px ;
+}*/
+
+table{
+    width: 700px;
+    position: relative;
+    top: 250px;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    border-bottom: #009688 solid 3px;
+
+}
+
+table th{
+    background-color:rgba(54, 53, 53, 0.89);
+    color: white;
+    padding:15px 5px;
+}
+
+table td{
+    background-color: #eee;
+padding: 35px 8px;
+}
+
+p{
+    display: inline;
+    color: white;
+    padding: 5px 10px;
+}
+.view{
+    background-color: #1a8fef;
+}
+.delete{
+    background-color:#f44336;
+}
