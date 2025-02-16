@@ -1,0 +1,68 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*تكلفه 1*/
+.sec1 h3{
+    letter-spacing:2px ;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0px red, 4px 4px 0px blue,6px 6px 0px purple; 
+}
+
+
+/*تكلفه2 */
+.one{
+    text-transform: uppercase;
+}
+
+.two{
+    text-transform: capitalize;
+}
+
+.three{
+    text-transform: lowercase;
+}
+
+
+/*تكلفه3  */
+
+.d1, .d2, .d3{
+    width: 400px; 
+ background-color: #eee;
+    padding: 12px;
+    margin: 5px;
+}
+
+.d2{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.d3{
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*-- تكلفه04 --*/
+
+a{
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    background-color: #009688;
+    padding: 7px;
+    margin: auto;
+    width: 40px;
+    border-bottom: 10px solid #00514a;
+  text-decoration:none;
+  color:white;
+  padding:15px;
+  font-weight:bold;
+}
+ 
