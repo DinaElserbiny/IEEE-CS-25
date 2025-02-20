@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    font-family:  Helvetica, sans-serif;
+}
+
+.first-section {
+    background-image: url("./photo_2025-02-20_20-17-41.jpg");
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+/*---------------------------------------------------------*/
+.second-section{
+    text-align: center;
+    font-size: 20px;
+   line-height: 1.5;
+   margin-top: 15px;
+   color:rgb(27 49 82);
+   
+}
+.second-section p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgba(27, 49, 82, 0.555);
+}
+/*------------------------------------------------------*/
+
+.third-section{
+    position: relative;
+        width: 60%;
+        height: 70px;
+        margin: auto;
+        padding: 37px 30px 0px ;
+        
+        background-color: rgb(248 249 254);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px; 
+        -o-border-radius: 15px;
+}
+
+ .third-section .left-side{
+    float: left; 
+    
+ }
+
+.third-section a{
+    float: right;
+    font-weight: 800;
+}
+
+.third-section img{
+    background-color: hsl(222.22deg 69.23% 92.35%);
+    padding: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.third-section .pragraph {
+    position: absolute; 
+    left:80px;
+    top:34px;
+    color:rgb(27, 49, 82);
+
+}
+
+.third-section .pragraph :nth-of-type(1){
+    font-weight: bold;
+}
+
+.third-section .pragraph :nth-of-type(2)
+{
+color:rgba(27, 49, 82, 0.555);
+}
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------*/
+
+.fourth-section{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fourth-section :nth-of-type(1) {
+    text-decoration: none;
+    padding: 20px 21%;
+   display: inline-block;
+   margin-top: 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px -15px hsl(244.59, 75.31%, 52.35%);
+    background-color:hsl(244.59deg 75.31% 52.35%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.fourth-section :nth-of-type(2)
+{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.517);
+}
