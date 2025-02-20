@@ -1,0 +1,83 @@
+html{
+    font-family: sans-serif;
+}
+ .d1 div{
+    background-color: #eee;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 30px 150px 0px 150px;
+
+} 
+
+.d1 div:empty{
+    background-color: red;
+}
+
+.d2{
+    background-color: #dddddd;
+    text-align: center;
+    width: 350px; 
+    margin: auto;
+    padding: 25px 15px;
+}
+
+.d2::first-letter{
+background-color: red;
+color: white;
+padding: 18px 12px;
+margin-left: -100px;
+font-weight: bold;
+}
+
+.p1 p{
+    position: relative;
+    left: 100px; 
+    background-color: #eee;
+    padding: 16px;
+    width: 470px;
+    border-left: solid #e43b80 5px;
+}
+
+.p1 p::before{
+    content: attr(data-person);
+    position: absolute;
+    background-color: #d4d4d4;
+    left: -98px;
+    text-align: center;
+    width: 50px;
+    bottom: 8px;
+    padding: 8px 10px;
+}
+
+.p1 p::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 12px; 
+    border-color: transparent #e43b80 transparent transparent;
+    left: -28px;
+    bottom: 13px;
+}
+
+/*------------------------------*/
+.p2 p{
+    counter-increment: p2;
+    background-color: #eee;
+    width: 350px;
+    padding: 15px 120px 15px 0px;
+    border-right:#f44336 solid 5px ;
+
+}
+
+.p2 p::before{
+    content: counter(p2);
+    background-color: #f44336;
+    color: white;
+    padding: 15px 20px;
+    margin-right: 10px;
+    font-weight:bold;
+}
+
