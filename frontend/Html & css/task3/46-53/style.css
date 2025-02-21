@@ -1,0 +1,226 @@
+body{
+    font-family: sans-serif;
+}
+
+.d1{
+
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+     justify-content: center;
+    box-shadow: -5px 0px 0px #2196f3, 5px 0px 0px #ff5722;
+    align-items: center;
+    color: #ff5722;
+    font-weight: bold;
+}
+.parent1{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+}
+
+.parent1 div{
+    display: flex;
+    width: 190px;
+    padding: 13px 0px;
+    color: white;
+    background-color: #ff5722;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent2{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: auto;
+    display: flex;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parent2 div{
+    display: flex;
+    background-color: #56767af0;
+    color: white;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent2 .one2{
+order: 6;
+align-self: flex-end;
+    padding: 10px 0px;
+}
+
+.parent2 .two2{
+order:5;
+}
+
+.parent2 .three2{
+order:2;
+    align-self: flex-start;
+    padding: 10px 0px;
+}
+.parent2 .four2{
+order: 3;
+    padding: 6px 0px;
+}
+.parent2 .five2{
+order: 4;
+}
+.parent2 .six2{
+order:1;
+}
+
+.parent3{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.parent3 div{
+    display: flex;
+    background-color: #168e8d;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 95px
+}
+
+.parent3 .one3, 
+.parent3 .three3
+{
+      display: flex;
+ align-self: flex-end;
+width: 35px;
+}
+
+.parent3 .two3{
+    width: 60%;
+}
+
+.parent4{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent4 div{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent4 .one4{
+    order: 2;
+    background-color: #f58625;
+}
+
+.parent4 .two4{
+order: 3;
+align-self:flex-end;
+background-color: #5cb86a;
+}
+
+.parent4 .three4{
+order: 4;
+background-color: rgb(87 57 53 / 87%);
+
+}
+
+.parent4 .four4{
+order: 1;
+align-self: flex-end;
+background-color: rgb(81 67 166);
+}
+
+:root{
+    --maincolor:#d4d4d4;
+    --mainpaddingmargin:10px;
+    
+}
+
+.page{
+    width: 1000px;
+    background-color: #eee;
+    padding: var(--mainpaddingmargin);
+    margin: auto;
+}
+
+.page .header {
+    display: flex;
+    justify-content: space-between;
+   margin: var(--mainpaddingmargin);
+}
+
+.page .header .logo{
+    background-color:var(--maincolor);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin:16px 16px 16px 0px;
+}
+
+.page .header .links{
+    background-color:var(--maincolor);
+    width: 850px;
+     display: flex;
+ justify-content: flex-end;
+ list-style-type:none;
+} 
+.links li{
+    padding:var(--mainpaddingmargin);
+}
+
+.main-area{
+height: 400px;
+display: flex;
+justify-content: space-between;
+margin: var(--mainpaddingmargin);
+}
+
+.main-area .content{
+    background-color: var(--maincolor);
+    width: 570px;
+    padding: var(--mainpaddingmargin);
+}
+.main-area .sidebar{
+    background-color:var(--maincolor);
+    width: 350px;
+    padding: var(--mainpaddingmargin);
+}
+
+.footer{
+    background-color: var(--maincolor);
+    padding: var(--mainpaddingmargin);
+    display: flex;
+    justify-content: space-between;
+    margin: var(--mainpaddingmargin);
+}
+
+
