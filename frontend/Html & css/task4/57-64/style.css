@@ -1,0 +1,237 @@
+body{
+    font-family: sans-serif;
+  }
+  
+  
+  .grid1 {
+      margin: auto;
+      background-color: #ddd;
+      padding: 20px;
+      width: 800px;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3,calc(95%/3));
+  gap: 20px;
+      grid-template-rows: 40px;   
+  }
+  
+    .grid1 div{
+      counter-increment: count;
+      background-color: #607d8b;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+    }
+  
+    .grid1 div::before{
+      content: "Element" " " "" counter(count);
+    }
+  
+    .layout{
+      background-color: #009688;
+      padding: 5px;
+      margin: auto;
+      width: 1000px;
+      height: 500px;
+      display: grid;
+      grid-template-areas: 
+      "header header header header header header"
+      "section section section section aside aside"
+      "footer footer footer footer footer footer";
+      /* grid-template-columns: 230px; */
+      grid-template-rows: 50px 400px;
+  
+    }
+  
+    header,
+    section,
+    aside,
+    footer{ 
+      display: grid;
+  color: white;
+  padding:5px;
+    }
+  
+  header{
+      grid-area: header;
+   background-color: #03a9f4;
+    }
+    header::after{
+  content: "Header";
+    }
+  
+  section{
+      grid-area: section;
+      background-color: #ff5722;
+  }
+  section::after{
+      content: "Section";
+  }
+  
+  aside{
+      grid-area: aside;
+      background-color: #607d8b;
+  }
+  aside::after{
+      content: "Aside";
+  }
+  
+  footer{
+      grid-area: footer;
+      /* background-color: #009688; */
+  }
+  
+  footer::after{
+      content: "Footer";
+  }
+  
+  .grid2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 11px repeat(2,2fr) 10px;
+    gap: 10px;
+    grid-template-rows: 380px;
+    }
+  
+  .grid2 div{
+    display: grid;
+  background-color: #403f3f;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  }
+    
+  
+    .grid3 {
+      background-color: #ddd;
+      padding: 20px;
+      margin: auto;
+      width: 800px;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(9,10%);
+      grid-template-rows: repeat(6,calc(90%/6));
+      gap: 10px;
+    }
+  .grid3 div{
+    background-color: #03a9f4;
+    display:grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .grid3 .one,
+  .grid3 .eight{
+    grid-column:span 9;
+  }
+  
+  .grid3 .two{
+    grid-column:span 6 ;
+  }
+  
+  .grid3 .three,
+  .grid3 .four,
+  .grid3 .six,
+  .grid3 .seven{
+    grid-column: span 3;
+  }
+   
+  .grid3 .five{
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+  
+  .grid3 .one{
+    order:8;
+  }
+  .grid3 .eight{
+    order: -1;
+  }
+  
+  /* حل اخر */
+  .grid33{
+  background-color: #ddd;
+  padding: 20px;
+  margin: auto;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: calc(95%/6);
+  grid-template-areas:
+      "r1 r1 r1 r1"
+      "r2 r2 r2 r3"
+      "r4 r5 r5 r5"
+      "r6 r5 r5 r5"
+      "r7 r5 r5 r5"
+      "r8 r8 r8 r8";
+  }
+  
+  
+  .grid33 div{
+    background-color: #03a9f4;
+    display:grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .one1{
+  grid-area: r8;
+  }
+  
+  .two2{
+    grid-area: r2;
+  }
+  
+  .three3{
+    grid-area: r3;
+  }
+  
+  .four4{
+    grid-area:r4;
+  }
+  
+  .five5{
+    grid-area: r5;
+  }
+  .eight8{
+    grid-area: r1;
+  }
+  
+  .grid4{
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 20px 20px;
+    gap:10px;
+    align-content: space-between;
+    /* ممكن منستخدمش 
+    alin-content 
+    و نستخدم مكانه 
+    gap:360px 10px;
+     و هيدي نفس انتيجه*/
+    }
+    .grid4 div{
+      background-color: #e91e63;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  
+  
+  
+  

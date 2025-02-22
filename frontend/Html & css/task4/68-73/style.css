@@ -1,0 +1,161 @@
+:root{
+    --color:white;
+}
+
+h1.one{
+color: var(--color);
+margin: 5% 50%;
+position: relative;
+width: 150px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+}
+
+h1.one::after,
+h1.one::before{
+    content: "";
+    height: 50px;
+    width: 150px;
+    top: 0;
+    left: 0;
+z-index: -1;
+    background-color: #ff5722;
+    position: absolute;
+}
+
+h1.one::after{
+    transform: skew(10deg , 10deg);
+    -webkit-transform: skew(10deg , 10deg);
+    -moz-transform: skew(10deg , 10deg);
+    -ms-transform: skew(10deg , 10deg);
+    -o-transform: skew(10deg , 10deg);
+}
+h1.one::before{
+    transform: skew(-10deg ,-10deg);
+    -webkit-transform: skew(-10deg ,-10deg);
+    -moz-transform: skew(-10deg ,-10deg);
+    -ms-transform: skew(-10deg ,-10deg);
+    -o-transform: skew(-10deg ,-10deg);
+}
+
+h1.two{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 35px;
+    margin: 5% 50%;
+    position: relative;
+    background-color: #009688;
+    color: var(--color);
+}
+
+h1.two::after{
+    transform: skew(20deg, 1deg);
+    content: "";
+    border-right: solid white 6px;
+    position: absolute;
+    width: 12px;
+    height: 50px;
+    left: -9px;
+    background-color:#009688;
+}
+
+
+.class {
+    matrix(3, 0.2679, 0, 3, 20, 100);
+
+    /*scalx=3 
+      skewx=0.2979
+      skewy=0
+       scaly=3
+        translatex=20
+         traslatey=100
+         */
+  }
+
+
+  div.three{ /*parent*/
+    position: relative;
+    margin:15% 50%;
+    background-color: #607d8b;
+    width: 200px;
+    height: 200px;
+    border-bottom: solid black 5px;
+  }
+
+  div.three::after{ /*child*/ 
+    content: "";
+    background-color: black;
+    /*widthofparentisdiamofchildعرضالابهوقطرالابنلذالكنستخدمقانون*/width: 141.4px;
+    /*جذرال"200 تربيع"على2*/transform:;
+    height: 141.4px;
+    transform: rotate(45deg);
+    bottom: 127px;
+    left: 25.3px;/*((200-141.3)/2)-4border*/
+    border-bottom: solid white 4px;
+    border-right:solid white 4px;
+    position: absolute;
+  }
+
+  div.three::before{
+    content: "Elzero";
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    top: 170px;
+    left: 5px; 
+  }
+  
+.four{
+    width: 200px;
+    height: 200px;
+    margin: auto 50%;
+    position: relative;
+    transform-origin: left center;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+}
+
+.four:hover{
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+
+
+.four::after,
+.four::before{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-family: sans-serif;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.four::after{
+    content: "Front";
+    background-color: #ff5722;
+}
+
+.four::before{
+    content: "Back";
+    background-color: blue;
+    transform:rotateY(180deg);
+    -webkit-transform:rotatey(180deg);
+    -moz-transform:rotatey(180deg);
+    -ms-transform:rotatey(180deg);
+    -o-transform:rotatey(180deg);
+}

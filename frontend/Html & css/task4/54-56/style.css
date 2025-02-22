@@ -1,0 +1,88 @@
+
+
+.div1{
+    position: relative;
+    width: 600px;
+    text-align: center;
+    padding: 30px 0px;
+    margin: auto;
+    background-color: #eee;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 8px;
+    border-left: solid  #f54c3b 10px ;
+border-right: solid #9b1ac3 10px ;
+}
+.div1::first-letter{
+    color: rgb(255, 0, 89);
+}
+
+
+
+.div1::after{
+    top: 0px;
+  
+}
+.div1::before{
+    bottom: 0;
+   
+}
+
+.div1::after,
+.div1::before{
+     content: "";
+    position: absolute;
+  left:0;
+    width: 600px;
+    height: 10px;
+    background-image: linear-gradient(90deg ,
+     #f54c3b 120px 
+    , hsl(209deg 80% 58% / 97%) 120px 
+    ,hsl(209deg 80% 58% / 97%) 240px
+     ,#04cd04f5 240px 
+     ,#04cd04f5 360px 
+     ,#ef2b63 360px
+      , #ef2b63 480px,
+       #9b1ac3 480px 
+       ,#9b1ac3 600px);
+}
+
+
+
+.div2 input{
+    text-transform: capitalize;
+width: 100%;
+padding: 20px;
+font-size: 20px;
+background-color: #eee;
+font-family: sans-serif;
+border: none;
+}
+
+.div2 div{
+    text-transform: capitalize;
+    width: 600px;
+    position: relative;
+    display: flex;
+    margin: auto;
+margin-bottom: 10px;
+}
+
+.div2 div::after{
+    content: "";
+    background-image: linear-gradient(90deg,
+    #f05757 50%,
+    #06ab4e 50%,
+    #06ab4e 100%);
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    bottom:0;
+    height:3px;
+}
+ 
+.div2 div input:focus{
+outline: none;
+}
+   
+
