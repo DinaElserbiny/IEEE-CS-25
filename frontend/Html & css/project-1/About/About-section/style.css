@@ -1,0 +1,49 @@
+
+*{
+    font-family: "Manrope", serif;
+    background-color: black;
+
+}
+
+/*start about section */
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about div {
+ 
+    padding: 5px 138px;
+    width: 45%;
+    letter-spacing: 1px;
+
+}
+.about h2 {
+    color: white;
+    font-size: 50px;
+}
+
+.about p:nth-of-type(1)
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.about  p:nth-of-type(2)
+{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.527);
+    margin-bottom: 30px;
+}
+.about a {
+    color: rgba(211, 233, 122, 1);
+}
+ hr {
+    background-color:rgba(72, 72, 72, 1);    ;
+ 
+    border: 1px solid transparent;
+}
+/*end about section */
+
