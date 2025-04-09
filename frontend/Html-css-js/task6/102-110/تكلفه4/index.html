@@ -1,0 +1,17 @@
+<!-- HTML -->
+<div id="counter">10</div>
+
+<script>
+  const counterDiv = document.getElementById('counter');
+
+  let count = parseInt(counterDiv.textContent);
+
+  const counter = setInterval(() => {
+    count--;
+    counterDiv.textContent = count;
+
+    if (count === 0) {
+      window.location.href = "https://www.elzero.org";
+    }
+  }, 1000); 
+</script>

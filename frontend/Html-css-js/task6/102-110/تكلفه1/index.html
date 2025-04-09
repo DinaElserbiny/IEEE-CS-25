@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Numbers</title>
+</head>
+<body>
+
+<script>
+  let input = prompt("Print Number From – To", "Example: 5-20");
+
+  if (input) {
+    let parts = input.split("-");
+    
+    let num1 = parseInt(parts[0]);
+    let num2 = parseInt(parts[1]);
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+      let from = Math.min(num1, num2);
+      let to = Math.max(num1, num2);
+
+      for (let i = from; i <= to; i++) {
+        document.write(i + "<br>");
+      }
+    } else {
+      document.write("من فضلك أدخل أرقام صحيحة بينهما علامة -");
+    }
+  } else {
+    document.write("لم يتم إدخال أي قيمة.");
+  }
+</script>
+
+</body>
+</html>

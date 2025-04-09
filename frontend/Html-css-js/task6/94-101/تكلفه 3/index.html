@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const ourElement = document.querySelector('.our-element');
+        const paragraph = document.querySelector('p');
+      
+        if (paragraph) {
+          paragraph.remove();
+        }
+      
+        const startDiv = document.createElement('div');
+        startDiv.className = 'start';
+        startDiv.title = 'Start Element';
+        startDiv.setAttribute('data-value', 'Start');
+        startDiv.textContent = 'Start';
+      
+        const endDiv = document.createElement('div');
+        endDiv.className = 'end';
+        endDiv.title = 'End Element';
+        endDiv.setAttribute('data-value', 'End');
+        endDiv.textContent = 'End';
+      
+        ourElement.before(startDiv);
+        ourElement.after(endDiv);
+      </script>
+      
+
+
+</head>
+
+
+
+<body>
+    <div class="our-element">Our Element</div>
+<p>Paragraph</p>
+</body>
+</html>

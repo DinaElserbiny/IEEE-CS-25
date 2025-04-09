@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const div = document.querySelector('div');
+
+const textNodes = Array.from(div.childNodes).filter(node => node.nodeType === 3);
+
+const elzeroText = textNodes.map(node => node.textContent.trim()).find(text => text === "Elzero");
+
+console.log(elzeroText); // "Elzero"
+document.body.append(elzeroText);
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <span>Hello</span>
+        <!-- We Need The Next Text Without Spaces -->
+        Elzero
+      </div>
+</body>
+</html>
