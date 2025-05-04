@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timer {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .time {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .label {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .unit {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
