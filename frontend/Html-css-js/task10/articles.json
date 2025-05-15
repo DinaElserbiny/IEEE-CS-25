@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "author": "Ali",
+    "category": "Science",
+    "title": "The Power of Science",
+    "body": "This article explores the impact of scientific discoveries on modern life."
+  },
+  {
+    "id": 2,
+    "author": "Mahmoud",
+    "category": "Science",
+    "title": "Innovations in Tech",
+    "body": "A deep dive into recent tech innovations that are shaping the future."
+  },
+  {
+    "id": 3,
+    "author": "Osama",
+    "category": "Education",
+    "title": "Learning Never Stops",
+    "body": "Education in the 21st century and how lifelong learning is essential."
+  },
+  {
+    "id": 4,
+    "author": "Sayed",
+    "category": "Science",
+    "title": "The Universe and Us",
+    "body": "An article about the universe, galaxies, and our place in it."
+  },
+  {
+    "id": 5,
+    "author": "Ahmed",
+    "category": "Art",
+    "title": "Art Through the Ages",
+    "body": "Exploring how art has evolved from ancient times to the present day."
+  }
+]
